@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>REGISTRATION FORM</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body id="all">
+	<input type="submit" onclick="change()" value="Change background color" style="color: white; background-color: green;height: 40px;">
+	<input type="submit" onclick="change1()" value="Change font color" style="color: white; background-color: green;height: 40px;">
+	<a href="index.html"><input type="submit" value="Refraesh" style="color: white; background-color: green;height: 40px;"></a>
+	<div id="main">
+		<div class="top-container1" id="action">
+			<div class="top-col-1">
+				<i class="fas fa-user-plus"></i> Apply Online
+			</div>
+			<div class="top-col-2">
+				<i class="fas fa-sign-in-alt"></i> Registered User
+			</div>
+		</div>
+		<div id="action2" class="container2">
+			<div class="list1">
+				<span>Application Type<sup style="color: red;">*</sup></span><br>
+				<input list="type" class="type" placeholder="-- Select one --">
+				<datalist id="type">
+					<option value="Application Type 1">
+					<option value="Application Type 2">
+					<option value="Application Type 3">
+					<option value="Application Type 4">
+					<option value="Application Type 5">
+				</datalist>
+			</div>
+			<div class="list2">
+				<span>Category<sup style="color: red;">*</sup></span><br>
+				<input list="type2" class="type" placeholder="-- Select one --">
+				<datalist id="type2">
+					<option value="Category 1">
+					<option value="Category 2">
+					<option value="Category 3">
+					<option value="Category 4">
+					<option value="Category 5">
+					<option value="Category 6">
+				</datalist>
+			</div>
+		</div>
+	<h3>Applicant information</h3>
+		<div class="container3" id="action3">
+				<div class="list1">
+					<span id="action4">Title<sup style="color: red;">*</sup></span><br>
+					<input list="title" class="type" placeholder="-- Select one --">
+					<datalist id="title">
+						<option value="Title 1">
+						<option value="Title 2">
+						<option value="Title 3">
+						<option value="Title 4">
+						<option value="Title 5">
+						<option value="Title 6">
+					</datalist>
+				</div>
+				<div class="a">
+					<div class="col-1">
+						<span>Last Name / Surname<sup style="color: red;">*</sup></span><br><br>
+						<input type="text" name="lname" pattern="[A-Z]"><br><br>
+						<span>Date of Birth / Incorporation / Formation (DD/MM/YYYY)</span><br><br>
+						<input type="text" name="lname">
+					</div>
+					<div class="col-1">
+						<span>First Name</span><br><br>
+						<input type="text" name="lname" required><br><br>
+						<span>Email ID<sup style="color: red;">*</sup></span><br><br>
+						<input type="text" name="lname" required>
+					</div>
+					<div class="col-1">
+						<span>Middle Name</span><br><br>
+						<input type="text" name="lname"  required><br><br>
+						<span>Mobile Number<sup style="color: red;">*</sup></span><br><br>
+						<input type="text" name="lname" required>
+					</div>
+				</div>
+		</div>
+			<button>Reset</button>
+			<button>Submit</button>
+	</div>
+			<script>
+				function change()
+				 {
+					document.getElementById("action2").style.backgroundColor="green";
+					document.getElementById("action3").style.backgroundColor="green";
+					document.getElementById("action4").style.color="white";
+					document.getElementById("action2").style.color="yellow";
+				}
+
+				function change1()
+				 {
+					document.getElementById("all").style.color="red";
+					document.getElementById("all").style.color="red";
+					document.getElementById("all").style.backgroundColor="black";
+				}
+			</script>
+</body>
+</html>
